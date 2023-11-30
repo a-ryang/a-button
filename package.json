@@ -1,14 +1,19 @@
 {
-  "name": "css-publish-rollup",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.css",
+  "name": "css-publish-rollup-test",
+  "version": "1.0.1",
+  "description": "css publish test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a-ryang/css-publish-rollup"
+  },
+  "main": "dist/bundle.css",
   "type": "module",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rm -rf ./dist && rollup -c ",
+    "deploy": "npm run build && npm publish"
   },
   "keywords": [],
-  "author": "",
+  "author": "a-ryang",
   "license": "MIT",
   "devDependencies": {
     "postcss": "^8.4.31",
