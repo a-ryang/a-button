@@ -1,0 +1,19 @@
+{
+  "name": "css-publish-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.css",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss": "^8.4.31",
+    "postcss-import": "^15.1.0",
+    "rollup": "^4.6.1",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
