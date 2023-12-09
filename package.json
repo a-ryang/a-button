@@ -1,7 +1,7 @@
 {
-  "name": "css-publish-rollup-test",
-  "version": "1.0.2",
-  "description": "css publish test",
+  "name": "a-button",
+  "version": "1.1.0",
+  "description": "Modern Button CSS",
   "repository": {
     "type": "git",
     "url": "https://github.com/a-ryang/css-publish-rollup"
@@ -12,7 +12,12 @@
     "build": "rm -rf ./dist && rollup -c ",
     "deploy": "npm run build && npm publish"
   },
-  "keywords": [],
+  "keywords": [
+    "button",
+    "button css",
+    "button component",
+    "ui"
+  ],
   "author": "a-ryang",
   "license": "MIT",
   "devDependencies": {
