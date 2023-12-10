@@ -4,7 +4,7 @@ import postcssImport from "postcss-import";
 export default {
   input: "package/style.css",
   output: {
-    file: "dist/bundle.css",
+    file: "dist/index.css",
     format: "es",
   },
   plugins: [
