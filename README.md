@@ -17,6 +17,26 @@ Modern Button CSS
 <button class="a-btn disabled">Label</button>
 ```
 
+## Installation
+
+### Using NPM
+
+```bash
+npm install a-button
+```
+
+After installing, you can import a-button CSS in your JavaScript file:
+
+```js
+import "a-button";
+```
+
+### Using CDN
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/a-button@latest/dist/index.css" />
+```
+
 ## Override Style
 
 To customize the style of `a-button`, you can create a separate CSS file and override the CSS variables defined in the component. This method allows you to maintain your custom styles separately and apply them easily across your application.
