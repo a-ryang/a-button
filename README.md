@@ -14,7 +14,6 @@ Modern Button CSS
 
 <!-- disabled -->
 <button class="a-btn" disabled>Label</button>
-<button class="a-btn disabled">Label</button>
 ```
 
 ## Installation
@@ -34,7 +33,9 @@ import "a-button";
 ### Using CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/a-button@latest/dist/index.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/a-button@latest/dist/index.css" />
 ```
 
 ## Override Style
@@ -49,38 +50,37 @@ To customize the style of `a-button`, you can create a separate CSS file and ove
 ```css
 /* Override default button styles */
 .a-btn {
-  --a-btn-h: 2.5rem; /* Change the height */
-  --a-btn-px: 1.5rem; /* Change the horizontal padding */
-  --a-btn-bg: #f0f0f0; /* Change the background color */
-  --a-btn-bd: #ff0000; /* Change the border color */
-  --a-btn-bd-radius: 0.5rem; /* Change the border radius */
-  --a-btn-fs: 1rem; /* Change the font size */
-  --a-btn-color: #0000ff; /* Change the font color */
-}
+  --a-btn-fw: 500; /* font weight */
 
-/* Customizing the small button */
-.a-btn\:sm {
-  --a-btn-h: 1.25rem;
-  --a-btn-px: 0.5rem;
-}
+  /* a-btn:sm */
+  --a-btn-fs-sm: 0.875rem; /* font size */
+  --a-btn-h-sm: 2rem; /* height */
+  --a-btn-px-sm: 1rem; /* padding left, right */
+  --a-btn-bd-radius-sm: 0.3rem; /* border radius */
 
-/* Customizing the large button */
-.a-btn\:lg {
-  --a-btn-h: 3rem;
-  --a-btn-px: 2rem;
-}
+  --a-btn-fs-md: 0.875rem;
+  --a-btn-h-md: 2rem;
+  --a-btn-px-md: 1rem;
+  --a-btn-bd-radius-md: 0.375rem;
 
-/* Customizing the active state of the button */
-.a-btn:not(.disabled):not([disabled]):active {
-  --a-btn-bg: rgba(0, 128, 0, 0.2); /* Change the background color on active state */
-  transform: scale(1.05); /* Change the scale on active state */
-}
+  --a-btn-fs-lg: 1rem;
+  --a-btn-h-lg: 2.5rem;
+  --a-btn-px-lg: 1.375rem;
+  --a-btn-bd-radius-lg: 0.45rem;
 
-/* Customizing the disabled state of the button */
-.a-btn:disabled,
-.a-btn.disabled {
-  --a-btn-bg: rgba(128, 128, 128, 0.3); /* Change the background color for disabled state */
-  --a-btn-color: rgba(255, 255, 255, 0.5); /* Change the font color for disabled state */
+  --a-btn-color: #111827d0;
+  --a-btn-bg: #ffffff;
+  --a-btn-bg-active: rgba(40, 40, 40, 0.07);
+  --a-btn-bd-width: 1px; /* border */
+  --a-btn-bd-style: solid;
+  --a-btn-bd-color: #dee3e6;
+  --a-btn-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.03), 0px 2px 2px -1px rgba(0, 0, 0, 0.04),
+    0px -1px 4px 0px rgba(0, 0, 0, 0.01);
+
+  /* disabled */
+  --a-btn-color-disabled: #11182774;
+  --a-btn-bd-color-disabled: #e9ecef;
+  --a-btn-bg-disabled: rgba(40, 40, 40, 0.043);
 }
 ```
 
