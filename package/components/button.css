@@ -94,3 +94,34 @@
   background-color: var(--a-btn-bg-disabled);
   cursor: not-allowed;
 }
+
+.a-close {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem;
+  -webkit-mask-size: 1.5rem;
+  mask-size: 1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+.a-close::before {
+  -webkit-mask-image: url(/icons/close.svg);
+  mask-image: url(/icons/close.svg);
+  content: "";
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: inherit;
+  mask-size: inherit;
+  -webkit-mask-position: center;
+  mask-position: center;
+  background-color: #111827d0;
+}
