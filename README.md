@@ -35,7 +35,7 @@ import "a-button";
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/a-button@latest/dist/index.css" />
+  href="https://cdn.jsdelivr.net/npm/a-button@latest/dist/index.css" />
 ```
 
 ## Override Style
